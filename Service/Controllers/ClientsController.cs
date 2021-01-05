@@ -4,6 +4,7 @@ using Application.Clients.Commands.UpdateClient;
 using Application.Clients.Queries.ExportClients;
 using Application.Clients.Queries.GetClients;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Service.Controllers
@@ -11,7 +12,7 @@ namespace Service.Controllers
     public class ClientsController : ApiControllerBase
     {
         [HttpGet]
-        public async Task<ActionResult<GetClientsVm>> GetClients()
+        public async Task<ActionResult<List<ClientDto>>> GetClients()
         {
             return await Mediator.Send(new GetClientsQuery());
         }

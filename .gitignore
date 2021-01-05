@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/CitcoTest
+/Application/bin/Debug/net5.0
+/Application/obj
+/Domain/bin/Debug/net5.0
+/Domain/obj
+/Infrastructure/bin/Debug/net5.0
+/Infrastructure/obj
+/Service/bin/Debug/net5.0
+/Service/obj
